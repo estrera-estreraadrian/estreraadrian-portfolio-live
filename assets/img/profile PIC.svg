@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Profile icon">
+  <rect width="160" height="160" rx="12" fill="#fff" stroke="#ddd"/>
+  <circle cx="80" cy="62" r="28" fill="#fafafa" stroke="#333" stroke-width="2"/>
+  <path d="M30 142 C 44 112, 60 102, 80 102 C 100 102, 116 112, 130 142" fill="#fafafa" stroke="#333" stroke-width="2"/>
+</svg>
