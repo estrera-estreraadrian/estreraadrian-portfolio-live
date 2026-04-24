@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact (Broken)</title>
+
+    <!-- INTENTIONALLY BROKEN: wrong relative path to CSS from a nested page -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Contact Us</h1>
+
+        <nav class="site-nav" aria-label="Primary">
+          <!-- INTENTIONALLY BROKEN: wrong paths back to root pages -->
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Let’s Work Together</h2>
+        <p>
+          Want to collaborate or ask a question? Send a message below. (For this
+          assessment, this page is inside the <code>pages/</code>
+          folder on purpose to test correct use of relative paths.)
+        </p>
+
+        <div class="card" aria-label="Quick links">
+          <p><strong>Quick links:</strong></p>
+          <ul>
+            <li>GitHub: <a href="#">github.com/alexdev</a></li>
+            <li>Email: <a href="#">alex.dev@example.com</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form">
+          <label class="field">
+            <span class="field-label">Name</span>
+            <input class="field-input" type="text" name="name" />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Email</span>
+            <input class="field-input" type="email" name="email" />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Message</span>
+            <textarea class="field-input" name="message" rows="4"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Web Systems Assessment — Front-End Challenge 2.0</small>
+      </div>
+    </footer>
+  </body>
+</html>
