@@ -3,102 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Developer Portfolio (Broken)</title>
+    <title>Developer Portfolio</title>
 
-    <!-- INTENTIONALLY BROKEN: wrong stylesheet path and filename -->
-    <link rel="stylesheet" href="style.css" />
+   
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <h1 class="site-title">Alex Developer</h1>
+        <h1 class="site-title">Adrian Estrera</h1>
 
         <nav class="site-nav" aria-label="Primary">
           <!-- INTENTIONALLY BROKEN: these hrefs do not match existing filenames/locations -->
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="/pages/contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <section class="hero card">
+      <section class="hero card fade-in">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="hero-kicker">Frontend Developer</p>
-            <h2 class="hero-title">Building clean, accessible web pages</h2>
+            <p class="hero-kicker">IT Student</p>
+            <h2 class="hero-title">Learning, implementing, practicing</h2>
+            </div>
             <p class="hero-text">
-              This portfolio site is intentionally broken for an assessment.
-              Your job is to reorganize the project, rename files, and fix
-              relative paths so everything loads correctly.
+             Using this as a way to showcase my progress and occasional day to day life.
             </p>
-
-            <ul class="tag-list" aria-label="Key skills">
-              <li class="tag">HTML</li>
-              <li class="tag">CSS</li>
-              <li class="tag">Responsive Layout</li>
-              <li class="tag">Debugging</li>
-            </ul>
-          </div>
-
-          <div class="hero-media">
-            <!--
-              INTENTIONALLY BROKEN:
-              - The banner image currently exists with a different name.
-              - Students must create the banner folder and rename the banner file.
-            -->
-            <img
-              class="hero-banner"
-              src="./assets/img/banner/hero-banner.jpg"
-              alt="Laptop with code on screen"
-              width="1120"
-              height="560"
-            />
-          </div>
-        </div>
+          </div> 
       </section>
 
-      <section class="card">
+     <section class="card fade-in">
         <h2>Featured Projects</h2>
         <div class="project-grid">
-          <article class="project">
-            <h3 class="project-title">Front-End Challenge 2.0</h3>
-            <p class="project-text">
-              Refactor a broken project to match a clean folder structure and
-              correct relative paths.
-            </p>
-          </article>
-          <article class="project">
-            <h3 class="project-title">Semantic HTML Page</h3>
-            <p class="project-text">
-              Build a page using semantic tags and accessible navigation.
-            </p>
-          </article>
-          <article class="project">
-            <h3 class="project-title">Responsive Layout</h3>
-            <p class="project-text">
-              Use Flexbox and Grid to create clean layouts without floats.
-            </p>
-          </article>
+          
+        <a href="https://codepen.io/butadon217/pen/myEoGqE" target="_blank" class="project-link fade-in">
+  <article class="project">
+  
+    <h3 class="project-title">Valentines Card</h3>
+     <img class="project-image" src="./assets/img/valentines.png" alt="Valentines Card project preview" />
+    <p class="project-text">
+    Valentines Day Card
+    </p>
+  </article>
+</a>
+           <a href="https://codepen.io/butadon217/pen/ZYOMjvd" target="_blank" class="project-link fade-in">
+  <article class="project">
+    <h3 class="project-title">Schedule</h3>
+     <img class="project-image" src="./assets/img/schedule.png" alt="Schedule project preview" />
+    <p class="project-text">
+      Made a schedule.
+    </p>
+  </article>
+</a>
+           <a href="https://codepen.io/butadon217/pen/YPWebgj" target="_blank" class="project-link fade-in">
+  <article class="project">
+    <h3 class="project-title">ID Card</h3>
+   <img class="project-image" src="./assets/img/ID.png" alt="ID Card project preview" />
+    <p class="project-text">
+      A sample ID card.
+    </p>
+  </article>
+  </a>
         </div>
-      </section>
-
-      <section class="card">
-        <h2>What should work when you are done</h2>
-        <ul>
-          <li>Opening <strong>index.html</strong> shows a styled page</li>
-          <li>Navigation links go to the correct pages</li>
-          <li>Images display correctly</li>
-          <li>Folder structure is clean and consistent</li>
-        </ul>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <small>Web Systems Assessment — Front-End Challenge 2.0</small>
-      </div>
+<marquee>Adrian Estrera's Portfolio</marquee>
+  </div>
     </footer>
+    <script src="./styles/script.js"></script>
   </body>
 </html>
