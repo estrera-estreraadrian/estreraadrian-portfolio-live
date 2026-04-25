@@ -25,7 +25,7 @@ body {
 
   display: grid;
   grid-template-rows: auto 1fr auto;
-  
+  gap: 16px;
   min-height: 100vh;
 }
 
@@ -122,8 +122,6 @@ body {
   background: #b58a8a;
   cursor: pointer;
 }
-
-/* Portfolio-style homepage layout */
 
 .hero {
   overflow: hidden;
