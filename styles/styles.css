@@ -22,7 +22,6 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
-
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 16px;
@@ -73,9 +72,7 @@ body {
   border-radius: 12px;
   padding: 2rem;
   margin: 1.5rem 0;
-  justify-content: space-between;
-  align-items: center;
-  gap:2rem;
+ 
 }
 .hero.card{
   display:flex;
@@ -105,8 +102,27 @@ body {
 
 .hero-grid {
   display: grid;
-  gap: 16px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 3rem;
+}
+.home-copy{
+  display:flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.home-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 10px;
 }
 .project-video {
   width: 100%;
@@ -122,8 +138,8 @@ body {
 .contact-card{
   display:flex;
   flex-direction: column;
-  gap:12px;
-  align-items: flex-start;
+  gap:1rem;
+ 
 }
 .contact-title{
   text-align:left;
@@ -136,7 +152,7 @@ body {
 }
 @media (min-width: 800px) {
     .hero-grid {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
   }
   .project-hero-image{
@@ -145,7 +161,10 @@ body {
     max-width: 250px;
     border-radius: 10px;
   }
-
+  .home-grid {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 4rem;
+  }
 }
 
 .hero-kicker {
@@ -263,12 +282,10 @@ body {
   transform: translateY(-6px);
  
 }
-.contact-info ul {
+.contact-info {
   display:flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0 0;
+flex-direction: column;
+gap: 8px;
 }
 
 .contact-info li{
