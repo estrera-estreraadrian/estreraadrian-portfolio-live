@@ -3,57 +3,98 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About</title>
+    <title>Projects</title>
 
-    <!-- INTENTIONALLY BROKEN: wrong stylesheet path and filename -->
-   <link rel="stylesheet" href="styles/styles.css" />
+   
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <h1 class="site-title">About This Site</h1>
+        <h1 class="site-title">Projects</h1>
 
         <nav class="site-nav" aria-label="Primary">
-          <!-- INTENTIONALLY BROKEN: filenames/paths are not correct -->
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="pages/contact.html">Contact</a>
+    
+         <a href="index.html">Home</a>
+         <a href="about.html">Projects</a>
+         <a href="pages/contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
     <main class="container">
-     <section class="card fade-in">
-        <h2>About Me</h2>
-        <p>
-          Hi! I'm Adrian, this is a portfolio that I will be using to upload my various projects.
-        </p>
+      <section class="hero card fade-in">
+        <div class="hero-grid">
 
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Drawing</li>
-          <li>Sketching</li>
-          <li>Learning how to create games</li>
-          <li>Playing games</li>
-        </ul>
+          <div class="hero-copy">
+            <p class="hero-kicker">IT Student</p>
+            <h2 class="hero-title">Learning, Practicing, Implementing, Trying</h2>
+            
+            <p class="hero-text">
+             This is a portfolio displaying my projects, progress and work. <br> <br>
+             I have worked on projects using HTML, CSS, JavaScript and Java.
+            </p>
+             </div> 
+            <img class = "project-hero-image" 
+            src="./assets/img/laptop-code.jpg"
+            alt="Laptop with code on screen"/>
+         
+      </div>
+</section>
+        <section class=" card fade-in">
+      <div class="project-grid">
 
-        <!-- INTENTIONALLY BROKEN: wrong image path and filename -->
-        <img
-          class="profile-image"
-          src="./assets/img/adrian.jpg"
-          alt="A simple profile icon"
-          width="150"
-          height="10"
-        />
+        <a href="https://codepen.io/butadon217/pen/myEoGqE"
+         target="_blank" 
+         class="project-link fade-in">
+        <article class="project">
+  
+    <h3 class="project-title">Valentines Card</h3>
+     <img class="project-image" 
+     src="./assets/img/valentines.png"
+     alt="Valentines Card project preview" />
+    
+     <p class="project-text"> Valentines Day Card </p>
+  </article>
+</a>
+           <a href="https://codepen.io/butadon217/pen/ZYOMjvd" 
+           target="_blank" 
+           class="project-link fade-in">
+            <article class="project">
+             <h3 class="project-title">Class Schedule</h3>
+               <img class="project-image" 
+               src="./assets/img/schedule.png" 
+               alt="Schedule project preview" />
+               <p class="project-text"> Made a project that uses my class schedule.</p>
+  </article>
+</a>
+           <a href="https://codepen.io/butadon217/pen/YPWebgj" 
+              target="_blank" 
+               class="project-link fade-in">
+               <article class="project">
+                  <h3 class="project-title">ID Card</h3>
+                  <img class="project-image" 
+                  src="./assets/img/ID.png" 
+                  alt="ID Card project preview" />
+                <p class="project-text"> A sample ID card. </p>
+  </article>
+  </a>
+  <div class="video-wrapper">
+  <video controls class="project-video">
+      <source src ="./assets/img/vids/demo-project.mp4" type = "video/mp4">
+</video>
+
+</div>
+        </div>
       </section>
-
+     
     </main>
 
     <footer class="site-footer">
       <div class="container">
-      <marquee>Adrian Estrera's Portfolio</marquee>
+<marquee>Adrian Estrera's Portfolio</marquee>
   </div>
     </footer>
-     <script src="./styles/script.js"></script>
+    <script src="./styles/script.js"></script>
   </body>
 </html>
